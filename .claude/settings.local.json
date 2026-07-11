@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile brochure/llm.py brochure/prompts.py brochure/scraper.py)",
+      "Bash(python -c \"import ast,sys; [ast.parse\\(open\\(f\\).read\\(\\),f\\) for f in ['brochure/llm.py','brochure/prompts.py','brochure/scraper.py']]; print\\('AST OK'\\)\")",
+      "Bash(python3 -m py_compile brochure/llm.py brochure/prompts.py brochure/scraper.py)",
+      "Bash(PYTHONPATH=/Users/ibrahim/Desktop/llm python3 -c \"import brochure.llm; print\\('IMPORT OK — all cross-module names resolve'\\)\")"
+    ]
+  }
+}
